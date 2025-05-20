@@ -18,7 +18,7 @@ const Navbar = () => {
               <li><a className='hover:font-bold' href="/">Help</a></li> */}
               {/* <li><a className='hover:font-bold' href="/">Github</a></li> */}
               <button className='text-blackpy-1 px-3 rounded-full flex items-center gap-2 border py-1 hover:bg-gray-700'>
-                <img className='h-8 w-8' src="src/assets/github.svg" alt="" />
+                <img className='h-8 w-8' src="/github.svg" alt="" />
                 <a target="_blank" href="https://github.com/">GitHub</a>
               </button>
             </ul>
