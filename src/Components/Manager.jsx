@@ -41,13 +41,13 @@ const Manager = () => {
   }
   
   const showPassword = () => {
-    if(ref.current.src.includes("src/assets/eyeclosed.svg")){
-      ref.current.src = "src/assets/eye.svg"
+    if(ref.current.src.includes("/eyeclosed.svg")){
+      ref.current.src = "/eye.svg"
       passwordRef.current.type = "password"
     }
     else{
         passwordRef.current.type = "text"
-        ref.current.src = "src/assets/eyeclosed.svg"
+        ref.current.src = "/eyeclosed.svg"
       }
     }
   
@@ -154,7 +154,7 @@ const Manager = () => {
 
                 <input ref={passwordRef} onChange={handleChange} value={form.password} className='rounded-full border border-white w-full px-4 py-1 text-white' type="password" name="password" id="" placeholder="Enter Password" />
                 <span className='absolute right-1 top-1.5 text-white cursor-pointer'>
-                  <img ref={ref} className='w-[24px] h-[24px]' src="src/assets/eye.svg" alt="" onClick={showPassword} />
+                  <img ref={ref} className='w-[24px] h-[24px]' src="/eye.svg" alt="" onClick={showPassword} />
                 </span>
               </div>
             </div>
@@ -183,21 +183,21 @@ const Manager = () => {
                   <td className='py-3 flex items-center justify-center gap-2 border border-white text-center'>
                     <a target="_blank" href={item.site}>{item.site}</a>
                     <div className="copyicon">
-                      <img className='h-5 w-5 pt-1 cursor-pointer' src="src/assets/copy.svg" alt="" onClick={() => { copyText(item.site) }} />
+                      <img className='h-5 w-5 pt-1 cursor-pointer' src="/copy.svg" alt="" onClick={() => { copyText(item.site) }} />
                     </div>
                   </td>
 
                   <td className='py-2  border border-white text-center'>
                     <div className="copyicon flex items-center justify-center gap-2">
                       <span>{item.username}</span>
-                      <img className='h-5 w-5 pt-1 cursor-pointer' src="src/assets/copy.svg" alt="" onClick={() => { copyText(item.username) }} />
+                      <img className='h-5 w-5 pt-1 cursor-pointer' src="/copy.svg" alt="" onClick={() => { copyText(item.username) }} />
                     </div>
                   </td>
 
                   <td className='py-2  border border-white text-center'>
                     <div className="copyicon flex items-center justify-center gap-2">
                       <span>{"*".repeat(item.password.length)}</span>
-                      <img className='h-5 w-5 pt-1 cursor-pointer' src="src/assets/copy.svg" alt="" onClick={() => { copyText(item.password) }} />
+                      <img className='h-5 w-5 pt-1 cursor-pointer' src="/copy.svg" alt="" onClick={() => { copyText(item.password) }} />
                     </div>
                   </td>
                   <td className='py-2  border border-white text-center'>
